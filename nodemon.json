@@ -2,6 +2,7 @@
     "env" : {
         "mongodb_db" : "testDb",
         "mongodb_user" : "lego1980",
-        "mongodb_pw" : "1980Dbz4"
+        "mongodb_pw" : "1980Dbz4",
+        "jwt_key" : "secrettest"
     }
 }

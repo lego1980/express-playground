@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 
+// make uploads available to public
+app.use('/uploads', express.static('uploads'));
+
 // log process in the terminal
 const morgan = require('morgan');
 app.use(morgan('dev'));
@@ -31,8 +34,6 @@ app.use((req, res, next) => {
     }
     next();
 });
-
-
 
 // routes which should handle requests
 const usersRoutes = require('./api/routes/users');
